@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="../styles/ordernow.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Coffee</h1>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="coffeeType">Coffee Type:</label>
+                <select id="coffeeType" name="coffeeType" required>
+                    <option value="">Select a coffee type</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Latte">Latte</option>
+                    <option value="Mocha">Mocha</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="customerEmail">Your Email:</label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+            </div>
+            <button type="submit">Order Now</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="./ordernow.js"></script>
+</body>
+</html>
